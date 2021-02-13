@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"409bc36d444047c98acb6ecb4cee4afd","collectionName":"covid_district"}

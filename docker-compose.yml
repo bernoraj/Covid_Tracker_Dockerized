@@ -1,0 +1,19 @@
+version: '2.3'
+
+services: 
+  angular:
+    hostname: localhost
+    build: covid19
+    ports: 
+      - "8181:80"
+  nodejs:
+    build: covid19-node
+    ports: 
+      - "4000:4000"
+    links:
+      - database
+
+  database:
+    build: MongoDB
+    ports: 
+      - "27017:27017"

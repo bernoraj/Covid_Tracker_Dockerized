@@ -1,0 +1,397 @@
+
+circle {
+  cursor: pointer;
+  transition: fill 1s ease-out;
+  }
+
+
+
+.navbar{
+
+  background-image: repeating-linear-gradient(90deg, hsla(298,16%,68%,0.06) 0px, hsla(298,16%,68%,0.06) 1px,transparent 1px, transparent 21px,hsla(298,16%,68%,0.06) 21px, hsla(298,16%,68%,0.06) 22px,transparent 22px, transparent 72px),repeating-linear-gradient(0deg, hsla(298,16%,68%,0.06) 0px, hsla(298,16%,68%,0.06) 1px,transparent 1px, transparent 21px,hsla(298,16%,68%,0.06) 21px, hsla(298,16%,68%,0.06) 22px,transparent 22px, transparent 72px),repeating-linear-gradient(135deg, hsla(298,16%,68%,0.06) 0px, hsla(298,16%,68%,0.06) 1px,transparent 1px, transparent 21px,hsla(298,16%,68%,0.06) 21px, hsla(298,16%,68%,0.06) 22px,transparent 22px, transparent 72px),linear-gradient(90deg, hsl(275,3%,97%),hsl(275,3%,97%));
+}
+
+.dashboarddate{
+  display: flex;
+  position: absolute;
+  left:68em;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;  
+  color:#16a085;
+}
+
+h4.covid-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;  
+  line-height: 28px;
+  font-weight: bolder;
+}
+
+
+.covid-grid{
+
+  display: grid ;  
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 1em;
+  justify-items: center;
+  align-items: center;
+}
+
+.covid-item {    
+  justify-content: space-evenly;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 270px;
+  height: auto;
+  box-shadow: 0px 3px 5px #dadada;  
+  background-image: radial-gradient(circle at center center, rgba(217, 217, 217,0.05) 0%, rgba(217, 217, 217,0.05) 15%,rgba(197, 197, 197,0.05) 15%, rgba(197, 197, 197,0.05) 34%,rgba(178, 178, 178,0.05) 34%, rgba(178, 178, 178,0.05) 51%,rgba(237, 237, 237,0.05) 51%, rgba(237, 237, 237,0.05) 75%,rgba(138, 138, 138,0.05) 75%, rgba(138, 138, 138,0.05) 89%,rgba(158, 158, 158,0.05) 89%, rgba(158, 158, 158,0.05) 100%),radial-gradient(circle at center center, rgb(255,255,255) 0%, rgb(255,255,255) 6%,rgb(255,255,255) 6%, rgb(255,255,255) 12%,rgb(255,255,255) 12%, rgb(255,255,255) 31%,rgb(255,255,255) 31%, rgb(255,255,255) 92%,rgb(255,255,255) 92%, rgb(255,255,255) 97%,rgb(255,255,255) 97%, rgb(255,255,255) 100%); background-size: 42px 42px;
+}
+
+
+.covid-map-stats{
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 270px;
+  height: 130px;
+  box-shadow: 0px 3px 5px #dadada;  
+  background-image: repeating-linear-gradient(0deg, hsla(23,0%,86%,0.45) 0px, hsla(23,0%,86%,0.45) 1px,transparent 1px, transparent 36px),repeating-linear-gradient(90deg, hsla(23,0%,86%,0.45) 0px, hsla(23,0%,86%,0.45) 1px,transparent 1px, transparent 36px),linear-gradient(90deg, hsl(334,2%,100%),hsl(334,2%,100%));
+
+}
+
+.covid-row {
+  display: flex;
+}
+
+.covid-col {
+  padding-right: 30px;
+}
+
+.covid-col.covid-recovered {
+  color: #32bb32;
+  padding-right: 0;
+}
+
+.covid-col.covid-confirmed {
+  color: #ff2c2c;
+}
+
+.covid-col.covid-deaths {
+  color: #494949;
+}
+.covid-col.covid-samples{
+  color:rgba(56, 59, 247, 0.651)
+}
+
+.covid-col.covid-negative{
+  color:rgba(3, 71, 3, 0.651)
+}
+
+.covid-col.covid-progress{
+  color:rgba(248, 80, 220, 0.877)
+}
+
+.covid-col.covid-ventillator{
+  color:rgba(0, 128, 0, 0.774)
+}
+
+.covid-col.covid-beds{
+  color:rgba(44, 59, 44, 0.774)
+}
+
+.covid-col.covid-tc{
+  color:rgba(216, 7, 94, 0.664)
+}
+
+.covid-value {
+  display: flex;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 25px;
+  text-align: center;  
+  
+}
+
+.covid-label {
+  display: flex;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  
+}
+
+h4.covid-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 28px;
+  
+}
+
+
+
+.mapsandstats{
+
+  display: grid;
+  grid-template-areas: 'left right';
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 80px;
+  grid-gap: 1em;  
+  margin: 0;
+  
+}
+
+.mapofTN{
+  grid-area: left;  
+  grid-row: 2 / 3;
+ margin-left: 5em;
+
+ a{
+  path {    
+    stroke: rgb(252, 252, 252);
+    stroke-width: 1px;
+    transition: fill 1s ease-out
+  }
+  path:hover {
+    stroke:#270100;    
+    stroke-width: 3px;
+    
+  }
+
+ } 
+ 
+}
+
+.covid-map-stats{
+
+  grid-area: right; 
+  grid-row: 2 / 3;   
+}
+
+
+ 
+
+
+
+.chartmap{
+
+  height: 70%;
+  width: 100%;
+  h2{
+    padding-left: 1.5em;
+    font-size: large;
+  }
+}
+.network{
+  h2{
+    padding-left: 1.5em;
+    font-size: large;
+    padding-top: 1em;
+  }
+}
+
+
+
+@media screen and (max-width: 415px) {
+
+
+.dashboarddate{
+  display: flex;
+  position: absolute;
+  width: auto;
+  left:13em;
+ 
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 25px;
+  text-align: center;  
+  color:#16a085;
+}
+
+main{
+//SVG Map
+  svg {
+    
+    a{
+      path {        
+        stroke: rgb(252, 252, 252);
+        stroke-width: 1px;
+        transition: fill 0.3ms; 
+      }
+      path:hover {
+        stroke:#270100;        
+        stroke-width: 3px;
+        
+      }
+    
+     } 
+   
+        
+  }
+
+  .mapsandstats{
+
+    display: flex; 
+    justify-content: center;
+    position: relative;
+    
+     .mapofTN{   
+      position: absolute;
+      width: 40vh;
+      height: 50vh;    
+      right: 2.5em;
+      top:10em;
+
+      .legend{
+
+        width: 100% !important;
+        position: relative;
+        right:19px;
+      }
+      
+    }   
+  
+        
+  }
+  
+  
+
+}
+.chartmap{
+
+  position: absolute;
+  height: 40vh;
+  width: 90%;
+  top:1025px;
+  h2{
+    padding-left: 1.5em;
+    font-size: small;
+  }
+  
+  }
+
+
+  .network{
+
+      position: absolute;
+      top:85em;
+      svg{
+        width: 100% !important;
+      }
+      h2{
+        position: relative;
+        padding-left: 1.5em;
+        font-size: small;
+        top:13em;
+      }
+
+  }
+
+
+}
+
+
+//iphone X
+@media screen and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3)
+and (orientation: portrait) 
+{
+
+
+  .dashboarddate{
+    display: flex;
+    position: absolute;
+    width: auto;
+    left:13em;
+   
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
+    text-align: center;  
+    color:#16a085;
+  }
+  
+  main{
+  //SVG Map
+    svg {
+      
+      a{
+        path {        
+          stroke: rgb(252, 252, 252);
+          stroke-width: 1px;
+          transition: fill 0.3ms; 
+        }
+        path:hover {
+          stroke:#270100;        
+          stroke-width: 3px;
+          
+        }
+      
+       } 
+     
+          
+    }
+  
+    .mapsandstats{
+  
+      display: flex; 
+      justify-content: center;
+      position: relative;
+      
+       .mapofTN{   
+        position: absolute;
+        width: 40vh;
+        height: 50vh;    
+        right: 2.5em;
+        top:10em;
+  
+        .legend{
+  
+          width: 100% !important;
+          position: relative;
+          right:2px;
+        }
+        
+      }   
+    
+          
+    }
+    
+    
+  
+  }
+  .chartmap{
+  
+    position: absolute;
+    height: 40vh;
+    width: 90%;
+    top:80em;
+    h2{
+      padding-left: 1.5em;
+      font-size: small;
+    }
+    
+    }
+  
+  
+    .network{
+  
+        position: absolute;
+        top:95em;
+        svg{
+          width: 100% !important;
+        }
+        h2{
+          position: relative;
+          padding-left: 1.5em;
+          font-size: small;
+          top:13em;
+        }
+  
+    }
+  
+  
+  }
